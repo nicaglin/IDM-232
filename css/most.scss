@@ -1,0 +1,381 @@
+$fontH: 'Chewy', cursive;
+$fontSubH: 'Kalam', cursive;
+$fontB: 'Open Sans', sans-serif;
+$mainSpacing: 70vh;
+@mixin flexStuffs {
+	display: flex;
+	flex-direction: column;
+}
+$moveOver: 5vw;
+@mixin AboutFlex {
+	display: flex;
+	flex: 1 0 50%;
+	flex-direction: column;
+	flex-wrap: wrap;
+}
+$lineSpaceSize: 1.5rem;
+
+* {box-sizing: border-box;
+font-size: 100%;}
+
+#wrap {
+	display: flex;
+}
+
+h1 {
+	font-family: $fontH;
+	font-size: 3rem;
+	letter-spacing: 3px;
+	margin-top: 25px;
+	margin-bottom: 0px;
+}
+h2{
+	display: inline-block;
+	font-family: $fontSubH;
+	padding: 10px;
+}
+span {
+    display: inline-block;
+    position: fixed;
+    top: 5%;
+    right: 5%;
+    cursor: pointer;
+}
+
+.overlay {
+    height: 0;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+    overflow: hidden;
+    transition: 1s ease-in-out;
+}
+
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    font-family: $fontSubH;
+}
+
+.overlay a {
+    padding: 16px;
+    text-decoration: none;
+    font-size: 2rem;
+    color: #818181;
+    display: block;
+    transition: 0.25s;
+}
+
+.overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    font-size: 60px;
+}
+#foil {
+	@include flexStuffs;
+	height: $mainSpacing;
+	width: 100vw;
+	justify-content: flex-end;
+	text-align: center;
+	background-color: silver;
+}
+#prettyPic{
+	@include flexStuffs;
+	height: $mainSpacing;
+	justify-content: center;
+	background-color: cornsilk;
+	#samp {
+		margin-left: $moveOver;
+	}
+	#sampButt {
+		margin-left: $moveOver;
+	}
+}
+#coffee {
+	@include flexStuffs;
+	height: $mainSpacing;
+	justify-content: center;
+	background-color: darkSalmon;
+	#res{
+		margin-left: $moveOver;
+	}
+	#resButt{
+		margin-left: $moveOver;
+	}
+}
+#mePic {
+	@include flexStuffs;
+	height: $mainSpacing;
+	justify-content: center;
+	background-color: darkSeaGreen;
+	#about{
+		margin-left: $moveOver;
+	}
+	#aboutButt{
+		margin-left: $moveOver;
+	}
+}
+#dog{
+	@include flexStuffs;
+	height: $mainSpacing;
+	justify-content: center;
+	background-color: LightSkyBlue;
+	#contact{
+		margin-left: $moveOver;
+	}
+	#contactButt{
+		margin-left: $moveOver;
+	}
+}
+
+.buttonz a 
+	{	text-decoration: none;
+	color: black;
+		h2 {
+			text-decoration: none;
+			color: black;
+			border-style: solid;
+			border-width: 3px;
+			border-color: black;
+}}
+.buttonz a h2:hover {
+	border-style: dotted;
+	border-width: 3px;
+	border-color: black;
+}
+
+#resumeD {
+	background-color: lavender;
+	display: flex;
+	flex-direction: column;
+	font-family: $fontB;
+	width: 100vw;
+	#butt {
+			margin-left: $moveOver;
+		h2 {
+			font-size: 2rem;
+			margin: 0px;
+			padding: 5px;
+		}
+		ul {
+			display: flex;
+			flex-direction: column;
+			width: 80vw;
+			line-height: $lineSpaceSize;
+		}
+	}
+}
+#S2 {
+	@include flexStuffs;
+	flex-wrap: wrap;
+	flex-direction: column;
+}
+#S2 h3, h4, h5 {
+		display: inline-block;
+		font-family: $fontSubH;
+		margin: 0px;
+		margin-left: $moveOver;
+	}
+#S2 ul
+{
+	margin-left: $moveOver;
+}
+
+#poopAbout {
+	height: 100vh;
+	background-color: darkSeaGreen;
+}
+
+#aboutTitle {
+	margin-left: $moveOver;
+}
+
+#selfpic {
+	display: flex;
+	justify-content: center;
+	// background-color: black; just for testing
+}
+
+#intropara {
+	font-family: $fontB;
+	line-height: $lineSpaceSize;
+	margin: 5%;
+}
+
+#con {
+	display: flex;
+	flex-direction: row;
+	font-family: $fontB;
+	line-height: $lineSpaceSize;
+	width: 100vw;
+	height: 100vh;
+	background-color: LightSkyBlue;
+	p {
+		position: absolute;
+		top: 25%;
+		left: 25%
+	}
+}
+
+#comeon {
+	margin-left: $moveOver;
+}
+
+#poopSamp {
+	background-color: cornsilk;
+}
+.samp {
+	margin-left: $moveOver;
+}
+.samp p {
+	font-family: $fontB;
+	line-height: $lineSpaceSize;
+}
+
+#jszodiac, #UI1{
+	max-width: 80vw;
+	margin-top: 15%;
+}
+
+#marypop {
+	text-decoration: none;
+	color: black;
+		h2 {
+			text-decoration: none;
+			color: black;
+			border-style: solid;
+			border-width: 3px;
+			border-color: black;
+		}
+}
+#marypop h2:hover, #zodlink h2:hover{
+	border-style: dotted;
+	border-width: 3px;
+	border-color: black;
+}
+
+#zodlink {
+	text-decoration: none;
+	color: black;
+		h2 {
+			text-decoration: none;
+			color: black;
+			border-style: solid;
+			border-width: 3px;
+			border-color: black;
+		}
+
+}
+.buttbutt {
+	z-index: 21;
+}
+
+footer {
+	position: fixed;
+	width: 100vw;
+	top: 90%;
+	text-align: center;
+	font-family: $fontB;
+	font-size: .8rem;
+}
+
+@media (min-width: 37.5rem) {
+  /* 600px */
+  body {
+    background-color: orange;
+  }
+}
+
+@media (min-width: 56.25rem) {
+  /* 900px */
+	body {
+	background-color: gray;
+	width: 100%;
+	}
+	.import{
+		display: flex;
+		width: 100vw;
+	}
+	.col {
+		display: flex;
+		flex: 1 0 50%;
+		flex-wrap: wrap;
+		flex-direction: column;
+		max-width: 50vw;
+		overflow: hidden;
+	}
+	#foil{
+		height: 100vh;
+		justify-content: center;
+		width: 50vw;
+	}
+	.quarters {
+		display: flex;
+		flex: 1 0 50%;
+		width: 25vw;
+		height: 25vh;
+	}
+	#intropara {
+		display: flex;
+	}
+	#aboutText {
+		@include AboutFlex;
+		max-width: 37vw;
+		margin: 3%;
+	}
+	#selfpic {
+		@include AboutFlex;
+		height: auto;
+		max-width: 66vw;
+	}
+	#butt{
+		display: flex;
+	}
+	#name {
+		width: 100vw;
+	}
+	.col ul {
+		max-width: 30vw;
+	}
+	#moveDownCol {
+		margin-top: 7%;
+	}
+
+	#jszodiac, #UI1 {
+		display: flex;
+		margin: 5%;
+	}
+	#zodpic, #pup {
+	display: flex;
+	}
+	.despara {
+		display: flex;
+		margin: 5%;
+		max-width: 80vw;
+		margin-left: 27vw;
+	}
+
+	#marypop {
+	position: absolute;
+	left: 37%;
+	top: 73%;
+	}
+
+	#zodlink {
+		position: absolute;
+		left: 37%;
+		top: 42%;
+	}
+
+}

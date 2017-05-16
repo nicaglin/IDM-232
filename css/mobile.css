@@ -1,0 +1,15 @@
+* { box-sizing: border-box; }
+
+html { font-size: 100%; }
+
+body {
+  background-color: #000;
+  font: 100%/1.4 Century, Arial, sans-serif;
+}
+
+header {
+  background-color: #d1e3fa;
+  color: black;
+  padding: 1rem;
+  text-align: center;
+}

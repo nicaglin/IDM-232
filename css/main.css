@@ -1,0 +1,97 @@
+* {box-sizing: border-box;}
+
+html {
+	font-size: 100%;
+}
+
+h1 {font-size: 1.5rem;}
+
+.wrap {
+  display: flex;
+  flex-direction: row;
+}
+
+
+
+body {
+  background-color: #444; /*dark grey*/
+  color: #efefef;
+  font-size: 1rem;
+}
+header {
+	font-family: Century, Arial, serif;
+	font-size: .88rem;
+	background-color: #d1e3fa; /*light blue*/
+	color: black;
+	text-align: center;
+  padding: 1rem;
+  align-self: stretch;
+  width: 100vw;
+}
+nav ul li {
+  list-style: none;
+  text-decoration: none;
+  display: inline-block;
+}
+
+footer {
+	width: 100%;
+}
+
+#selfpic {
+  background-color: #4DC0FF;
+  padding: 1rem;
+}
+
+#accordian a {
+    color: gray;
+  }
+
+#accordian div {
+    overflow: hidden;
+    height: 0;
+    transition: height .5s ease-in-out;
+  }
+#accordian div:target {
+    height: 75%;
+  }
+
+.foot ul {
+  list-style: none;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+  margin: 0 auto;
+  width: 100%;
+}
+
+
+@media (min-width: 37.5rem) {
+  /* 600px */
+  body {
+    background-color: orange;
+  }
+  header {
+    text-align: right;
+  }
+
+  main {
+    padding-right: 1rem;
+   }
+
+  /*#selfpic {
+    width: 40%;
+  }*/
+}
+
+@media (min-width: 56.25rem) {
+  /* 900px */
+  body {
+    background-color: #000;
+    width: 100%;
+  }
+  header {
+    background-color: #d1e3fa;
+    text-align: left;
+  }
+}
