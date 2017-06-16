@@ -1,10 +1,11 @@
 <?php include "includes/header.php"; ?>
+	<title>Veronica Lin || Resume</title>
   	<link rel="stylesheet" href="css/most.css">
+	<div id="backgroundfix"><?php include "includes/nav.php";  ?></div>
 	<div id="wrap">
-	<?php include "includes/nav.php";  ?>
 		<main>
 		<div id="resumeD">
-		<div id="butt">
+		<div id="resText">
 		<div class="col">
 		<h1 id="name">Veronica Lin</h1>
 		<h2>Education</h2>
@@ -77,7 +78,7 @@
 		<h2>Skills</h2>
 			<div id="S5">
 			<ul>
-				<li>Design: Adobe Creative Suite, Invision, Xtensio, Lucid Chart Maya</li>
+				<li>Design: Adobe Creative Suite, Invision, Xtensio, Lucid Chart, Maya</li>
 				<li>Technology: Python, Java, HTML, CSS, Javascript, PHP, MySQL</li>
 				<li>Languages: Fluent in Mandarin Chinese</li>
 			</ul> 
@@ -94,8 +95,9 @@
 				<li>Selected for State Solo and Ensemble, 2012 </li>
 			</ul>
 			</div>
+			<br><br><br>
 		</div><!-- col end -->
-		</div><!-- butt end -->
+		</div><!-- resText end -->
 		</div><!-- res end -->
 		</main>
 <?php include"includes/footer.php";?>

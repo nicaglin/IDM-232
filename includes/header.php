@@ -10,9 +10,9 @@
 	<link rel="manifest" href="img/manifest.json">
 	<link rel="mask-icon" href="img/safari-pinned-tab.svg"> <!--color="#5bbad5"-->
 	<meta name="theme-color" content="#ffffff">
+	<link href="https://fonts.googleapis.com/css?family=Boogaloo" rel="stylesheet">
   	<link href="https://fonts.googleapis.com/css?family=Chewy" rel="stylesheet">
   	<link href="https://fonts.googleapis.com/css?family=Kalam" rel="stylesheet">
   	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-	<title>Veronica Lin</title>
 </head>
 <body>

@@ -1,8 +1,9 @@
 <?php include "includes/header.php"; ?>
+	<title>Veronica Lin || About</title>
   	<link rel="stylesheet" href="css/most.css">
-<body id="poopAbout">
+<body id="aboutTag">
+	<div><?php include "includes/nav.php"; ?></div>
 	<div id="wrap">
-	<?php include "includes/nav.php"; ?>
 		<main>
 		<h1 id="aboutTitle">About Me</h1>
 			<div id="intropara">	
@@ -19,8 +20,8 @@
 			<p>Another large part of Veronica&#39;s identity was formed during her years at a summer conference called Taiwanese American Foundation. There, Veronica learned more about her culture, connected with many individuals from all over the country, and continued to learn and grow as an individual. There were many seminars and discussions. Although the conference was short, many life long bonds were formed. It was always a week out of the 52 of the year that she really looked forward to.</p>
 
 			<p>Currently Veronica is a student at Drexel University. She loves pugs and enjoys eating watermelon. In her spare time, she is slowly discovering more of the city of Philadelphia. Veronica enjoys reading and crushing her opponents in a game of Monopoly Deal. She enjoys learning about other individuals and discovering the many things that they have to offer.</p>
+			<br><br><br>
 			</div>
 			</div>
 		</main>
-
 <?php include "includes/footer.php"; ?>
